@@ -1,0 +1,29 @@
+name: Plugin package
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Standalone не разошёлся с пакетом
+        run: python scripts/build_standalone.py --check
+      - name: Офлайн-тесты ядра
+        run: python tests/run_tests.py
+      - name: Собрать пакет плагина
+        run: python scripts/build_plugin.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: magnit-basket-plugin
+          path: dist/magnit-basket-plugin-*.zip

@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "line_id": "milk", "query": "молоко", "quantity": 1, "unit": "pack" },
+    { "line_id": "eggs", "query": "яйца С1", "quantity": 20, "unit": "piece" },
+    { "line_id": "cookies", "query": "печенье юбилейное шоколад", "quantity": 2, "unit": "pack" },
+    { "line_id": "pasta", "query": "макароны спиральки", "quantity": 1, "unit": "pack" }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "magnit-basket",
+  "version": "0.1.0",
+  "description": "Проверка продуктовой корзины в Магните по адресу: наличие, цены и итог. Только чтение.",
+  "author": {
+    "name": "howleysens"
+  },
+  "repository": "https://github.com/howleysens/magnit-basket",
+  "license": "MIT",
+  "keywords": [
+    "magnit",
+    "groceries",
+    "basket",
+    "availability",
+    "price",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Magnit Basket",
+    "shortDescription": "Наличие и цена корзины в Магните по адресу",
+    "longDescription": "Проверяет, есть ли продукты из списка в доставке Магнита по адресу покупателя, и считает стоимость.\n\nЧто делает:\n\nОпределяет магазин, который обслуживает адрес.\nПодбирает товары по каждой позиции и проверяет доступное количество.\nСчитает нужное число упаковок (20 яиц — это две упаковки по 10).\nПоказывает цену, итог и то, чего не хватает.\n\nЧего не делает: не кладёт товары в корзину, не резервирует их, не оформляет и не оплачивает заказ. Суммы не включают доставку и условные акции.\n\nЕсли подходящих товаров несколько, плагин не выбирает за вас: он показывает варианты и ждёт решения.",
+    "developerName": "howleysens",
+    "category": "Productivity",
+    "capabilities": [
+      "Search",
+      "Availability check",
+      "Price estimate"
+    ],
+    "websiteURL": "https://github.com/howleysens/magnit-basket",
+    "privacyPolicyURL": "https://github.com/howleysens/magnit-basket/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/howleysens/magnit-basket/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Проверь корзину в Магните по моему адресу",
+      "Есть ли молоко и яйца С1 по адресу: (адрес)?",
+      "Что из моего списка недоступно в Магните и сколько стоит остальное?"
+    ],
+    "brandColor": "#E4002B"
+  }
+}
