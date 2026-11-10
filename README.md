@@ -13,7 +13,7 @@ Python-скрипты, например Codex, Claude Code и Cursor.
 
 ```text
 Установи мне скилл magnit-basket из репозитория:
-https://github.com/howleysens/magnit-basket
+https://github.com/Delivery-MCP/magnit-mcp
 
 1. Склонируй репозиторий во временный каталог.
 2. Определи каталог пользовательских скиллов своего клиента.
@@ -37,22 +37,22 @@ https://github.com/howleysens/magnit-basket
 Скачайте репозиторий:
 
 ```bash
-git clone https://github.com/howleysens/magnit-basket.git
-cd magnit-basket
+git clone https://github.com/Delivery-MCP/magnit-mcp.git
+cd magnit-mcp
 ```
 
 ### Codex
 
 ```bash
 mkdir -p ~/.agents/skills
-cp -R skills/magnit-basket ~/.agents/skills/
+cp -R skills/magnit-mcp ~/.agents/skills/
 ```
 
 ### Claude Code
 
 ```bash
 mkdir -p ~/.claude/skills
-cp -R skills/magnit-basket ~/.claude/skills/
+cp -R skills/magnit-mcp ~/.claude/skills/
 ```
 
 Копируйте **весь каталог** `magnit-basket`: одного `SKILL.md` недостаточно.
@@ -72,7 +72,7 @@ cp -R skills/magnit-basket ~/.claude/skills/
 Бекон самый дешевый
 ```
 
-В клиентах с поддержкой команд скиллов можно вызвать `/magnit-basket`.
+В клиентах с поддержкой команд скиллов можно вызвать `/magnit-mcp`.
 
 Скилл только читает каталог: ничего не покупает и не резервирует.
 Адрес отправляется в `photon.komoot.io` для геокодирования, координаты и запросы
