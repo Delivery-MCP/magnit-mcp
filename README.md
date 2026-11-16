@@ -19,15 +19,15 @@ https://github.com/Delivery-MCP/magnit-mcp
 2. Определи каталог пользовательских скиллов своего клиента.
    Для Codex используй ~/.agents/skills, для Claude Code — ~/.claude/skills.
    Для другого клиента сначала проверь, где он читает скиллы.
-3. Скопируй туда весь каталог skills/magnit-basket, включая SKILL.md
-   и scripts/magnit_basket.py. Установи для пользователя, а не для одного проекта.
+3. Скопирй только файл skills/magnit-basket/SKILL.md в каталог скиллов
+   своего клиента. Установи для пользователя, а не для одного проекта.
    Если magnit-basket уже установлен, обнови только его. Другие скиллы не меняй.
-4. Проверь, что установленный скрипт запускается:
-   python3 <каталог-скиллов>/magnit-basket/scripts/magnit_basket.py --help
-5. Сообщи путь установки и объясни, как вызвать скилл в моём клиенте.
+4. Скрипт проверки лежит в корне репозитория: scripts/magnit_basket.py.
+   Проверь, что он запускается: python3 scripts/magnit_basket.py --help
+5. Сообщи путь установки SKILL.md и объясни, как вызвать скилл в моём клиенте.
 
 Не используй sudo. Не устанавливай MCP-сервер и дополнительные зависимости:
-для скилла достаточно Python и файлов из skills/magnit-basket.
+для скилла достаточно Python, SKILL.md и scripts/magnit_basket.py из репозитория.
 ```
 
 После установки начните новый чат или перезапустите клиент, если скилл не появился.
@@ -43,20 +43,14 @@ cd magnit-mcp
 
 ### Codex
 
-```bash
-mkdir -p ~/.agents/skills
-cp -R skills/magnit-mcp ~/.agents/skills/
-```
+Скопируйте `skills/magnit-basket/SKILL.md` в `~/.agents/skills/magnit-basket/SKILL.md`.
 
 ### Claude Code
 
-```bash
-mkdir -p ~/.claude/skills
-cp -R skills/magnit-mcp ~/.claude/skills/
-```
+Скопируйте `skills/magnit-basket/SKILL.md` в `~/.claude/skills/magnit-basket/SKILL.md`.
 
-Копируйте **весь каталог** `magnit-basket`: одного `SKILL.md` недостаточно.
 Для другого клиента используйте его каталог пользовательских скиллов.
+Скилл — это `SKILL.md`; скрипт проверки берётся из корня репозитория (`scripts/magnit_basket.py`).
 
 ## Как пользоваться
 

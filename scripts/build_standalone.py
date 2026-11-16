@@ -15,7 +15,7 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-TARGET = ROOT / "skills" / "magnit-basket" / "scripts" / "magnit_basket.py"
+TARGET = ROOT / "scripts" / "magnit_basket.py"
 
 HEADER = '''#!/usr/bin/env python3
 """Проверка продуктовой корзины в Магните по адресу — автономный скрипт скилла.

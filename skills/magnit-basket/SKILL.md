@@ -42,26 +42,25 @@ description: Проверяет продуктовую корзину в Маг�
 
 ## Как запускать
 
-Скрипт лежит **в каталоге этого скилла**: `scripts/magnit_basket.py` рядом с этим файлом.
-Рабочий каталог у агента произвольный, поэтому вызывай по полному пути.
+Скилл — только `SKILL.md`. Скрипт проверки лежит в корне репозитория: `scripts/magnit_basket.py`.
+Рабочий каталог у агента произвольный, поэтому вызывай скрипт по полному пути из клона репозитория.
 
-Найди каталог скилла (обычное место установки):
+Найди скрипт в клонированном репозитории:
 
 ```text
-~/.claude/skills/magnit-basket/scripts/magnit_basket.py
+<путь-к-репозиторию>/scripts/magnit_basket.py
 ```
 
-Если скилл установлен иначе — подставь фактический путь к своей копии `SKILL.md`.
 Проверить, что скрипт на месте и Python доступен:
 
 ```bash
-python3 ~/.claude/skills/magnit-basket/scripts/magnit_basket.py --help
+python3 <путь-к-репозиторию>/scripts/magnit_basket.py --help
 ```
 
 Запуск проверки обычным списком (готовый файл не нужен, но можно собрать):
 
 ```bash
-python3 <каталог-скилла>/scripts/magnit_basket.py check \
+python3 <путь-к-репозиторию>/scripts/magnit_basket.py check \
   --address "Саратов, улица Лисина 5А" \
   --list /tmp/magnit-list.txt \
   --human

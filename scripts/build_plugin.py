@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 REQUIRED = [
     ".codex-plugin/plugin.json",
     "skills/magnit-basket/SKILL.md",
-    "skills/magnit-basket/scripts/magnit_basket.py",
+    "scripts/magnit_basket.py",
     "README.md",
 ]
 
@@ -52,9 +52,8 @@ def main() -> int:
         ".codex-plugin/plugin.json",
         "agents/openai.yaml",
         "skills/magnit-basket/SKILL.md",
-        "skills/magnit-basket/agents/openai.yaml",
-        "skills/magnit-basket/eval.md",
-        "skills/magnit-basket/scripts/magnit_basket.py",
+        "scripts/magnit_basket.py",
+        "eval.md",
         "README.md",
         "LICENSE",
         "PRIVACY.md",

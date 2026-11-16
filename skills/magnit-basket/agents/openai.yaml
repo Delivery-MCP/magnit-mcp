@@ -1,4 +1,0 @@
-interface:
-  display_name: "/magnit-basket"
-  short_description: "Проверить корзину в Магните по адресу: наличие, цены, итог."
-  default_prompt: "Use $magnit-basket to check whether my grocery basket is available at Magnit for my address, with prices and total."
